@@ -1,0 +1,109 @@
+body {
+  		font-family: 'Raleway', sans-serif;
+  		background-color: #01BACC;
+     margin: 0 auto;
+    color: #31363C;
+
+  	}
+  	
+    header {
+      text-align: center;
+      background: #31363C;
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: #F6856C;
+      text-decoration: none;
+    }
+    a:visited {
+    
+    }
+    h1 {
+      color: #01BACC;
+      font-size: 69px;
+    	padding: 5px;
+    }
+    img {
+      margin: 40px 0px -20px 0px;
+      
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.3);
+      color: #7CC186;
+    }
+    li {
+      display: inline;
+      padding: 0px 15px 0px 15px;
+    }
+ 
+    
+
+      
+    h2 {
+   	 font-family: 'Economica', sans-serif;
+   	 font-weight: normal;
+   	 font-size: 35px;
+   	 margin: -50px 0 50px 0;
+   	 }
+   	 
+   	 h3 {
+   	 font-family: 'Economica', sans-serif;
+   	 font-size: 30px;
+   	 
+   	 }
+   	 
+   	 footer {
+   	 background: rgba(246,133,108,.95);
+   	 background-size: cover;
+   	 margin: 0 auto;
+   	 
+   	 }
+   	 .contact {
+   	 max-width: 500px;
+      padding: 20px 20px 50px 20px;
+      margin: 0 auto;
+      color: #31363C;
+   	 }
+   	 
+   	 .contact a {
+   	 color: #31363C;
+   	 text-decoration: underline;
+   	 }
+   	 
+   	 .about {
+   	 max-width: 500px;
+      padding: 20px 20px 40px 20px;
+      margin: 0 auto;
+   	 
+   	 }
+   	 
+   	 @media (max-width: 500px) {
+      
+      li {
+        padding: 5px;
+        display: block;
+      }
+      
+      h2 {
+      	font-size: 25px;
+      	margin: -40px 0 50px 0;
+      }
+      
+      h1 {
+      	font-size: 49px;
+      }
+      
+      body {
+      
+      font-size: 15px;
+      }
+      
+      h3 {
+      font-size: 25px;
+      }
+      
+      
+      
+      }
