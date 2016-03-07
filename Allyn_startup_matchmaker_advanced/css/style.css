@@ -1,0 +1,243 @@
+* {
+  	box-sizing: border-box;
+
+	}
+
+*:before,
+*:after {
+	}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/*
+Colors: 
+light gray - #D7E0DB
+yellow - #FBD912
+red - #EC3E36
+red hover: #fa4542;
+dark gray - #3B393A
+black - #080808
+
+	FONTS
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Merriweather', serif;
+	font-family: 'Source Sans Pro', sans-serif;
+*/
+
+body {
+	margin: 0 auto;
+	padding-top: 71px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #202020;
+}
+
+/* --------------HEADER----------------*/
+
+.headerbg {
+	background-color: #3B393A;
+	border-width: 0 0 3px 0;
+	border-style: solid;
+	border-color: #FBD912;
+	box-shadow: 0 1px 1px 0 #AAAAAA;
+	position: fixed;
+	top: 0;
+  	left:0;
+ 	width: 100%;
+ 	z-index: 1;
+ 	
+
+}
+
+header {
+	padding: 15px 35px 18px 35px;
+	color: #FFF;
+	margin: 0 auto;
+	position: static;
+	overflow: hidden;
+	max-width: 1165px;
+}
+
+header h1 {
+	font-size: 30px;
+	font-family: 'Merriweather';
+	margin: 0;
+	position: relative;
+	float: left;
+	font-weight: 400;
+}
+
+
+nav ul {
+	list-style-type: none;
+	padding: 5px 0 0 0;
+	float: right;
+	margin: 0;
+}
+
+nav li:nth-child(-n+2) {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+nav li {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding-left: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+li a {
+	color: #FFF;
+}
+li a:hover {
+	text-decoration: underline;
+}
+
+/*----------HERO + CTA------------*/
+
+.gray {
+	background-color: #D7E0DB;
+	margin: 0 0 30px 0;
+}
+
+.gray h2 {
+	margin: 0;
+	padding: 25px 0 25px 0;
+	font-family: 'Merriweather', sans-serif;
+	font-style: italic;
+	font-size: 25px;
+	text-align: center;
+}
+
+.hero {
+	background-image: url("../images/coworking.jpg"); 
+	background-size: cover;
+	background-position: 0 -190px;
+	max-width: 1165px;
+	margin: 0 auto;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	box-shadow: inset 0 0 2px #898989,
+    inset 0 1px 2px #898989;
+    position: relative;
+    height: 100%;
+}
+
+.cta {
+	margin: 45px;
+	position: relative;
+	clear:both;
+	width: 489px;
+	left: 585px;
+	background-color: rgba(255, 255, 255, .8);
+	padding: 45px;
+	box-shadow: 0 0 5px 1px #898989;
+}
+
+
+.cta h3 {
+	font-size: 25px;
+	margin: 15px 0 10px 0;
+
+}
+
+
+.cta .button a{
+	background-color: 	#fa4542;
+	box-shadow:  0 4px 0 0 #C6312F;
+	color: #FFF;
+
+}
+.cta .button a:hover {
+	background-color: #EC3E36;
+}
+
+
+.button :hover {
+	background-color: blue;
+}
+
+.button a{
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;	
+	background-color: #D7E0DB;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+	margin-top: 30px;
+	display: block;
+
+}
+
+
+/*--------ARTICLES---------*/
+
+.thirds .button a{
+	box-shadow:  0 4px 0 0 #B1B9B5;
+	margin: 30px 0 0 0;
+	color: #202020;
+}
+.thirds .button a:hover {
+	background-color: #c7d2cd;
+}
+
+.thirds {
+	clear:both;
+	overflow: hidden;	
+
+	max-width: 1165px;
+	margin: 0 auto;
+}
+
+.thirds article {
+	width: 33.33%;
+	float: left;
+	padding: 35px;
+
+}
+
+
+.thirds article:nth-child(2) {
+	border-width: 0 1px 0 1px ;
+	border-color: #E5E5E5;
+	border-style: solid;
+
+}
+
+h4 {
+	font-family: 'Merriweather', serif;
+	margin: 0 0 10px 0;
+	font-size: 25px;
+
+}
+
+/*--------FOOTER---------*/
+
+.footerbg {
+ 	background-color: #3B393A;
+ 	margin-top: 30px;
+}
+
+footer {
+	top: 0;
+  	left:0;
+ 	width: 1165px;
+ 	color: #FFF;
+ 	margin: 0 auto;
+ 	padding: 25px 35px 25px 35px;
+}
+
+
+footer p{
+	margin:0;
+}
+
