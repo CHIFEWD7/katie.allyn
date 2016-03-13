@@ -10,7 +10,7 @@ $("header").on("click", function() {
 $("#box14").remove();
 
 // 3.	Hide all of the div’s in #row4
-// $("#row4").find("div").hide();
+$("#row4").find("div").hide();
 
 // 4.	Add a paragraph that says “I have been added” to all boxes with class “add-para” (Hint: you'll need to look up the append() method)
 $(".add-para").append(" <p>I have been added! Yay!</p> ");
@@ -54,12 +54,10 @@ $("#row4 div").addClass("selected");
 
 // 16.	Clicking reset should remove the selected class from everything and fade in the header element, the footer, and all elements with the class .box
 $("#reset").on("click", function() {
-	$("header").fadeIn();
-	$("footer").fadeIn();
-	$(".box").fadeIn();
-
+	$("header, footer, .box").fadeIn();
 });
 
-// HOW COME SOMETIMES YOU DON'T NEED THE . BEFORE A CLASS? SEE #7
-// Can't get last part of #16 to work.
-// Is there a way to list header, footer, and .box together to .fadeIn, instead of having 3 separate functions?
+
+	// console.log("reset clicked");
+
+
