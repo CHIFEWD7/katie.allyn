@@ -58,6 +58,6 @@ $("#reset").on("click", function() {
 });
 
 
-	// console.log("reset clicked");
+
 
 
