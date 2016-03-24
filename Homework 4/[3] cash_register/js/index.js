@@ -1,10 +1,9 @@
 // Create a global variable for the total
 
-// console.log("HI ffdools");
 var total = 0;
 var number = 0;
-// var mulah;
-// var number = 0;
+price = 0;
+
 
 // Create a function you can run when you submit the field Hint: .submit() in jQuery
 
@@ -22,45 +21,54 @@ function currency(number) {
 };
 
 function currency2(num){
-	var parsed = parseFloat(num)
-	number= parsed.toFixed(2);
+	var parsed = parseFloat(num);
+	number = parsed.toFixed(2);
 };
 
 
+function resetInput(num){
+    $(num).val("");
+}
+
+function formatPrice(price) {
+
+    formattedPrice = price.toFixed(2);
+    return formattedPrice;
+
+}
 $("#entry").submit(function() {
   
 	var input= $("#newEntry").val();
 
-
 	addNew(input);
-		currency(total);
-	currency2(input);
 
-	$("#entries").append("<td>&dollar;" + number+ "</td>");
+	currency(total);
+	currency2(input);
 	
+	$('#entries').append('<tr><td></td><td>'+ number +'</td></tr>');
+
 	$("#total").html( "&dollar;" + total);
 	
-	resetInput();
+	resetInput("#newEntry");
 	return false;
 
 });
 
-function resetInput(){
-    $("#newEntry").val("");
-}
+
+
+/*  QUESTION FOR ADRIANA:
+
+
+1. Getting the .toFixed function to work on things other than the total? I know we worked on this during office hours, but the fix we found only worked for "entires" and not for the "total", so we were back to my original dilemna: that I can't create a generic one that works for both.
+
+
+
+*/
+
 
 
 // In your enter function, remember we can use .append() in jQuery to add things to HTML elements
 
 // Remember parseFloat() and toFixed() to deal with formatting numbers. This will come in handy when dealing with displaying a "currency friendly" format (HINT: create an additional function to format your number into a "currency friendly" format)
 
-/*Questions 
 
-1. Table alignment? td's and th's? When I try to add td's to the table, it adds outside the th, even when I call out the th and tell it not to.
-
-
-3. Getting the .toFixed function to work on things other than the total? I know we worked on this during office hours, but the fix we found only worked for "entires" and not for the "total", so we were back to my original dilemna: that I can't create a generic one that works for both.
-
-
-
-*/

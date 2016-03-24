@@ -1,3 +1,4 @@
+
 // Be sure to use descriptive names for variables!!
 
 
@@ -15,28 +16,20 @@
 	// Display value for user
 /*
 $('#fahrenheit_to_celsius').on('click', function () {
-
 	var fahrenheit = $('#temperature').val();
 	fahrenheit = parseFloat(fahrenheit);
-
-
 	var celsius = (fahrenheit - 32) / 1.8;
 	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
 	celsius = celsius.toFixed(2);
-
 	// Hint: http://dev.w3.org/html5/html-author/charref
 	$("#result").html(fahrenheit + "&deg;F = " + celsius + "&deg;C");
 	$('#temperature').val('');
 });
-
-
 $('#celsius_to_fahrenheit').on('click', function () {
 	var celsius = $('#temperature').val();
 	celsius = parseFloat(celsius);
-
 	var fahrenheit = 1.8 * celsius + 32;
 	fahrenheit = fahrenheit.toFixed(2);
-
 	$("#result").html(celsius + "&deg;C = " + fahrenheit + "&deg;F");
 	$('#temperature').val('');
 });
@@ -106,5 +99,3 @@ $('#celsius_to_fahrenheit').on('click', function(){
 });
 
 // if input has no value on click, change .html of "result" to show error message
-
-
