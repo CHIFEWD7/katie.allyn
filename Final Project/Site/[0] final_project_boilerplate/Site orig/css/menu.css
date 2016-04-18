@@ -138,7 +138,7 @@ footer {
 	/*position:fixed;*/
 }
 
-.banner {
+.slide1 {
   overflow: hidden;
 	display: block;
   height:720px;
@@ -146,13 +146,15 @@ footer {
   background-image: url(../img/20150214010711-Cat_016.jpg);
   background-image: url(../img/Cat-Cafe-006.jpg);
     background-image: url(../img/DSC1834.jpg);
-background-image: url(../img/czech-cat-cafe-prague-afp_650x400_61458791271.jpg);
+	background-image: url(../img/czech-cat-cafe-prague-afp_650x400_61458791271.jpg);
 
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 5px rgba(0,0,0,.75);
   position: relative;
+  transition: all 200ms ease-in-out;
+  transition-delay: 500ms;
 
 }
 
@@ -165,6 +167,12 @@ background-image: url(../img/czech-cat-cafe-prague-afp_650x400_61458791271.jpg);
   background-color: red;
 }
 
+.slide2 {
+	background-color: blue;
+	background-image: none;
+	margin-top: -500px;
+
+}
 
 .overlay {
 	background-color: #55F2DD;
@@ -175,6 +183,7 @@ background-image: url(../img/czech-cat-cafe-prague-afp_650x400_61458791271.jpg);
 	position: absolute;
 	
 }
+
 
 .overlay2 {
     /* background-color: #55F2DD; */
@@ -198,6 +207,8 @@ background-image: url(../img/czech-cat-cafe-prague-afp_650x400_61458791271.jpg);
     right: 0;
     left: 0;
     z-index: 2;
+/*    transition: all 200ms ease-in-out;
+    transition-delay: 500ms;*/
 }
 
 .blurb h2 {
@@ -262,10 +273,16 @@ text-shadow: 0 0 5px rgba(255,255,255,0.4);
 
 }
 
+
 .pawIn {
 
 /*animation: pawIn 20s linear ;*/
 	transform: translateX(-440px);
+}
+
+.sliderLeft {
+	transform: translateX(1940px);
+
 }
 
 

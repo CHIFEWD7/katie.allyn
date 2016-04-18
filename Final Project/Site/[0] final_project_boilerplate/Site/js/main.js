@@ -43,13 +43,14 @@ $(document).ready(function(evt) {
 
 
 
-	$('.banner').on('click', function(e) {
+	$('.why').on('click', function(e) {
+		$('.blurb').addClass('sliderLeft');
 	    $('.pawRight').addClass("pawIn").delay(300).queue(function(next){
 	    		$(this).removeClass("pawIn");
 	    	next();
 		});
-
 	});
+
 
 
 

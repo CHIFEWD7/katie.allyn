@@ -147,6 +147,9 @@ footer {
 .bannerContainer {
 	/*position:fixed;*/
 	margin-top: 700px;
+	overflow: hidden;
+	position:relative;
+	z-index: 10;
 }
 
 .banner {
@@ -216,6 +219,8 @@ background-image: url(../img/czech-cat-cafe-prague-afp_650x400_61458791271.jpg);
     right: 0;
     left: 0;
     z-index: 2;
+    transition: all 200ms ease-in-out;
+    transition-delay: 500ms;
 }
 
 .blurb h2 {
@@ -266,7 +271,7 @@ text-shadow: 0 0 5px rgba(255,255,255,0.4);
     background-image: url(../img/1_paw.png);
     z-index: 5;
     position: absolute;
-/*    right: -440px;*/
+    right: -440px;
     top:250px;
     height: 205px;
     width: 259px;
@@ -283,9 +288,23 @@ text-shadow: 0 0 5px rgba(255,255,255,0.4);
 .pawIn {
 
 /*animation: pawIn 20s linear ;*/
-	transform: translateX(-540px);
+	transform: translateX(-440px);
 }
 
+.sliderLeft {
+	transform: translateX(940px);
+
+}
+
+.slide2 {
+	  overflow: hidden;
+	display: block;
+  height:440px;
+  position: relative;
+  top: 500px;
+  background-color: orange;
+  z-index: 2;
+}
 
 /*----------------MENU PAGE---------------*/
 .c1 {

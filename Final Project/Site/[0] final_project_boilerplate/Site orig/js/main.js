@@ -43,7 +43,8 @@ $(document).ready(function(evt) {
 
 
 
-	$('.banner').on('click', function(e) {
+	$('.bannerContainer').on('click', function(e) {
+		$('.slide1').addClass('sliderLeft');
 	    $('.pawRight').addClass("pawIn").delay(300).queue(function(next){
 	    		$(this).removeClass("pawIn");
 	    	next();
@@ -52,6 +53,12 @@ $(document).ready(function(evt) {
 	});
 
 
+
+// Start Carousel
+
+
+
+// End Carousel
 
 
 
