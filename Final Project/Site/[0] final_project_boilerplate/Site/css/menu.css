@@ -1,0 +1,532 @@
+
+html {
+	/*font-family: 'Hind', sans-serif;*/
+/*	font-family: 'Raleway', sans-serif;*/
+	font-family: 'Roboto Slab', serif;
+
+}
+
+
+body {
+	margin: 0 auto;
+	background-color: #f3f3f3;
+	position: relative; 
+min-height: 100%; 
+/*	font-family: 'Raleway', sans-serif;*/
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.site {
+/*	overflow: hidden;*/
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+
+.content {
+	padding: 80px 0 100px 0;
+	transition: all 250ms ease-in-out;
+	background-color: yellow;
+
+
+}
+
+.content.clearfix.menuPage{
+		background-color: #C0AFB3;
+}
+
+.centered {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 30px 0 30px;
+}
+
+
+
+
+header {
+	background-color: #171714;
+	overflow: hidden;
+	text-decoration: none;
+	position:fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+.two {
+	background-color: #171714;
+	overflow: hidden;
+	text-decoration: none;
+	position:fixed;
+	height: 750px;
+	width: 100%;
+	z-index: 1;
+	top: 50px;
+background-image: url(../img/czech-cat-cafe-prague-afp_650x400_61458791271.jpg);
+
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header a {
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+nav {
+  float: right;
+  text-align: right;
+  margin: 19px 0 0 0;
+  padding-left: 20px;
+
+}
+
+
+nav li {
+  float: left;
+    padding-left: 25px;
+  text-align: center;
+
+}
+
+nav a {
+  display: block;
+  color: #F56476;
+  opacity: .5;
+	  transition: all 200ms ease-in-out;
+}
+
+nav a:hover {
+  opacity: 1;
+/*  font-weight: bold;*/
+
+}
+
+
+
+header h1 {
+	float: left;
+	text-align: left;
+	font-weight: 400;
+
+
+/*	margin: 15px;*/
+
+}
+
+header h1 a {
+	color: #F56476;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: -5;
+  left: 0;
+  padding: .5rem;
+  background-color: #171714;
+  text-align: center;
+  overflow: hidden;
+  color: #F56476;
+  margin-top: 900px; 
+
+
+}
+
+/*----------------HOME PAGE---------------*/
+.bannerContainer {
+	/*position:fixed;*/
+	margin-top: 700px;
+	overflow: hidden;
+	position:relative;
+	z-index: 10;
+}
+
+.banner {
+  overflow: hidden;
+	display: block;
+  height:720px;
+/*  background-image: url(../img/CatCafe-16.jpg);
+  background-image: url(../img/20150214010711-Cat_016.jpg);
+  background-image: url(../img/Cat-Cafe-006.jpg);
+    background-image: url(../img/DSC1834.jpg);
+background-image: url(../img/czech-cat-cafe-prague-afp_650x400_61458791271.jpg);*/
+
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: red;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+  position: relative;
+  z-index: 2;
+
+}
+
+.why {
+  overflow: hidden;
+	display: block;
+  height:440px;
+  position: relative;
+  top: 500px;
+  background-color: red;
+  z-index: 2;
+}
+
+
+.overlay {
+	background-color: #55F2DD;
+	opacity: .7;
+	height: 720px;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	
+}
+
+.overlay2 {
+    /* background-color: #55F2DD; */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(85,242,221,0)), to(rgba(0,0,0,.2)));
+    height: 720px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.two.overlay2 {
+
+}
+
+
+.blurb {
+    
+    text-align: center;
+    color: #17353A;
+    width: 415px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 200ms ease-in-out;
+    transition-delay: 500ms;
+}
+
+.blurb h2 {
+    line-height: 1.4;
+    font-weight: bold;
+    font-size: 29px;
+    margin: 0 0 20px 0;
+    letter-spacing: 0.5px;
+
+    color: #17353A;
+/*    color:white;*/
+/*    text-shadow: rgba(255,255,255,0.5) 0px 1px 1px;*/
+text-shadow: 0 0 5px rgba(255,255,255,0.4);
+
+/*text-shadow: 0 0 1px rgba(0,0,0,0.5);*/
+}
+
+.blurb p {
+	margin-bottom: 50px;
+	color: #17353A;
+}
+.blurb .button, .button:visited {
+	transition: all .2s ease-in-out;
+	color: #22A2A7;
+	background-color: rgba(255,255,255,0.5);
+	text-align: center;
+	float: center;
+	text-decoration: none;
+	margin: 0 auto;
+	padding: 9px 40px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: .9rem;
+	text-transform: uppercase;
+
+}
+
+.blurb .button:hover {
+  background: #fff;
+  opacity: .7; 
+}
+
+.blurb.button a {
+	text-decoration: none;
+}
+
+.pawRight {
+    background-image: url(../img/1_paw.png);
+    z-index: 5;
+    position: absolute;
+    right: -440px;
+    top:250px;
+    height: 205px;
+    width: 259px;
+    /* background-size: 80px 60px; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: block; */
+    	transition: all 200ms ease-in-out;
+
+
+}
+
+.pawIn {
+
+/*animation: pawIn 20s linear ;*/
+	transform: translateX(-440px);
+}
+
+.sliderLeft {
+	transform: translateX(940px);
+
+}
+
+.slide2 {
+	  overflow: hidden;
+	display: block;
+  height:440px;
+  position: relative;
+  top: 500px;
+  background-color: orange;
+  z-index: 2;
+}
+
+/*----------------MENU PAGE---------------*/
+.c1 {
+    float: left;
+    width: 50%;
+}
+
+.c2 {
+    float: right;
+    width: 50%;
+}
+
+
+
+.menu {
+	width: 100%;
+	overflow: hidden;
+	padding: 4px;
+	float: left;
+
+}
+
+h2.pageName {
+	text-align: center;
+	margin: 2.5rem;
+
+text-shadow: 0px 0px 10px rgba(255,255,255,0.4);
+
+
+}
+.menuCategory {
+	background-color: gray;
+	float: left;
+	width: 100%;
+	background-color: #F1EDEE;
+	color: #191919;
+
+}
+
+.menuCategory h3, h2 {
+	font-weight: normal;
+	margin:0;
+	font-weight: normal;
+}
+
+.menuCategory h2 {
+	padding-bottom: 10px;
+}
+
+.menuNames{
+	float: left;
+	padding: 20px;
+}
+
+.menuCategory .expand {
+	float:right;
+	margin:42px 20px;
+	width:25px;
+	height:25px;
+	padding: 10px 4px;
+	opacity: .5;
+	transition: all 200ms ease-in-out;
+}
+
+.expand:hover {
+	opacity: 1;
+
+}
+
+.expand .line {
+	  width: 1.2rem;
+	  height: .1625rem;
+	  background: #22A2A7;
+	  transition: 0.5s;
+	  border-radius: 2.5rem;
+	  margin-bottom: .32em;
+	  opacity: 1;
+	  transition: all 300ms ease-in-out;
+	  outline: none;
+}
+
+.line.second {
+    transform: rotate(90deg);   
+    height: .175rem;
+    transition: 0.5s;
+    transition: all 300ms ease-in-out;
+    transform-origin: 13px -2px;
+}
+
+.expand .active.line{
+	background-color: #BFBEBE;
+
+}
+
+.active.line.second {
+	width: 0rem;
+	transform-origin: 9px 2px;
+}
+
+.menuItems {
+	padding: 0 20px 15px 20px;
+	display: none;
+	overflow: hidden;
+	box-shadow: inset 0px 0px 6px 3px rgba(0,0,0,0.08);
+		background-color: #E5E1E2;
+}
+
+.menuItems ul {
+	padding-left:0;
+
+}
+
+.menuItems ul li {
+	padding-top: 15px;
+
+}
+
+
+.drinkNames {
+	float: left;
+}
+
+.drinkPrices {
+	float: right;
+}
+
+.showItems {
+	display: block;
+
+}
+
+
+
+
+
+.active {
+    display: block;
+  }
+
+
+
+@media screen and (max-width: 768px) {
+
+	.c1 {
+		width: 100%;
+	}
+	.c2 {
+		width: 100%;
+	}
+
+	.hamburger {
+	  margin: 30px 0 0 0;
+	  width: 2.5rem;
+	  float: right;
+	  }
+
+	.line {
+	  width: 2.5rem;
+	  height: .2525rem;
+	  background: #F56476;
+	  transition: 0.5s;
+	  border-radius: 2.5rem;
+	  margin-bottom: .32em;
+	  opacity: 1;
+	  transition: all 300ms ease-in-out;
+	  outline: none;
+	  }
+
+	  /* Second line */
+	.activeX .line:nth-child(2) {
+	  opacity: 0;
+
+	}
+
+	/* Top line */
+	.activeX .line:first-child {
+
+	transform: rotate(45deg);
+	    transform-origin: 8px -2px;
+
+	}
+
+	/* Bottom line */
+	.activeX .line:last-child {
+
+	    transform: rotate(-46deg);
+	    transform-origin: 4px 4px;
+
+	}
+
+	.slidingContent {
+		transform: translateY(172px);
+	}
+
+	  nav {
+	    float: none;
+	    text-align: right;
+	    display: none;
+	    padding: 0 0 20px 0;
+	    overflow: hidden;
+	    width: 100%;
+	  }
+
+
+	  nav ul {
+	  	padding-left: 0;
+	  }
+	  nav li {
+	    width: 100%;
+	    padding-left: 0px;
+	  }
+
+	  nav a {
+	    padding:10px;
+
+	  }
+
+
+
+
+
+
+
+
+ }
